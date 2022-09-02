@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MQTTBrokerDemo.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="16"
+            Padding="30,30">
+
+            <Label Text="Porta"></Label>
+
+            <Entry x:Name="entryPorta"
+                   Placeholder="Inserisci porta MQTT broker"
+                   ClearButtonVisibility="WhileEditing"
+                   Keyboard="Numeric"
+                   ReturnType="Done"
+                   Text="1883"></Entry>
+
+            <Label Text="Stato Broker"></Label>
+
+            <Entry x:Name="entryStatoBroker"
+                   IsEnabled="False"
+                   Text="NON AVVIATO"></Entry>
+
+            <Button
+                x:Name="buttonAvviaTerminaBroker"
+                Text="Avvia Broker"
+                Clicked="OnAvviaTerminaBrokerClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+

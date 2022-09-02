@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MQTTBrokerDemo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MQTTBrokerDemo"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+            Title="Configurazione"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Icon="settings.png" />
+
+        <ShellContent
+            Title="Client"
+            ContentTemplate="{DataTemplate local:ClientPage}"
+            Icon="laptop.png"/>
+
+        <ShellContent
+            Title="Messaggi"
+            ContentTemplate="{DataTemplate local:MessaggiPage}"
+            Icon="mail.png"/>
+    </TabBar>
+
+</Shell>
+
